@@ -171,9 +171,9 @@ def determine_season():
         season = "Fall"
     elif month == "Dec" and day < 20:
         season = "Fall"
-        print(f"{month} {day} is in {season}."
+        print(f"{month} {day} is in {season}.")
 
-)
+
 # Call the function
 determine_season()
 
