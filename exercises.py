@@ -20,11 +20,15 @@
 
 def check_letter():
     vowel = ["a", "e", "i", "o", "u"]
+    consonant = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", 
+             "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
     letter = input('Please enter letter a-z').lower() 
     if letter in vowel:
         print(f"the letter {letter} is a vowel")
-    else: 
+    elif letter in consonant: 
         print(f"this {letter} is a consonant")
+    else: 
+        print("enter a letter")
     
 
 check_letter()
@@ -45,12 +49,12 @@ check_letter()
 # - Use the `input()` function to capture the user's age.
 # - Use `int()` to convert the input to an integer. Ensure to handle any conversion errors gracefully.
 # - Use a conditional statement to check if the age meets the minimum voting age requirement.
-
+'''
 def check_voting_eligibility():
     eligibility="18"
-    age = input('Please enter your age')
     num = int(eligibility)
-    if age >= eligibility: 
+    age=int(input('Please enter your age'))
+    if age >= num: 
         print('you can vote')
     else:
         print('you cannot vote')
@@ -58,7 +62,7 @@ def check_voting_eligibility():
 # Call the function
 check_voting_eligibility()
 
-
+'''
 
 # Exercise 3: Calculate Dog Years
 #
@@ -77,19 +81,19 @@ check_voting_eligibility()
 # - Use the `input()` function to capture user input.
 # - Convert the string input to an integer using `int()`.
 # - Apply conditional logic to perform the correct age calculation based on the dog's age.
-
+'''
 def calculate_dog_years():
     age = int(input("Input a dog's age:"))
     if age <= 2 :
         dog_years = (age * 10)
     else: 
         dog_years = 20 + (age - 2) * 7
-        print("The dog's age in dog years is", dog_years)    '
+        print("The dog's age in dog years is", dog_years)    
         
 
 # Call the function
 calculate_dog_years()
-
+'''
 
 # Exercise 4: Weather Advice
 #
@@ -106,7 +110,7 @@ calculate_dog_years()
 #
 # Hints:
 # - Use logical operators (`AND`, `OR`, `NOT`) in your if statements to handle multiple conditions.
-
+'''
 def weather_advice():
    cold = input('is it cold? yes/no')
    rain =input('is it raining? yes/no')
@@ -124,7 +128,7 @@ def weather_advice():
 # Call the function
 weather_advice()
 
-
+'''
 # Exercise 5: What's the Season?
 #
 # Write a Python function named `determine_season` that figures out the season based on the entered date.
@@ -143,7 +147,7 @@ weather_advice()
 # - Use 'in' to check if a string is in a list or tuple.
 # - Adjust the season based on the day of the month when needed.
 # - Ensure to validate input formats and handle unexpected inputs gracefully.
-
+'''
 def determine_season():
     month = input("Enter the month of the year (Jan-Dec):")
     day = int(input("Enter the day of the month"))
@@ -172,8 +176,5 @@ def determine_season():
     elif month == "Dec" and day < 20:
         season = "Fall"
         print(f"{month} {day} is in {season}.")
-
-
 # Call the function
-determine_season()
-
+determine_season() '''
